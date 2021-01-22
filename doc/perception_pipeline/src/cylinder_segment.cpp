@@ -316,6 +316,9 @@ public:
       // We define a struct to hold the parameters that are actually needed for defining a collision object completely.
       // |br|
       // CALL_SUB_TUTORIAL param_struct
+
+      /* Create a new cylinder params object. */
+      cylinder_params = new AddCylinderParams ();
       /* Store the radius of the cylinder. */
       cylinder_params->radius = coefficients_cylinder->values[6];
       /* Store direction vector of z-axis of cylinder. */

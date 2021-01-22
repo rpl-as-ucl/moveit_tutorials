@@ -46,7 +46,7 @@ int main(int argc, char** argv)
   ros::NodeHandle nh;
 
   ros::Publisher point_cloud_publisher = nh.advertise<sensor_msgs::PointCloud2>("/camera/depth_registered/points", 1);
-  ros::Rate loop_rate(0.1);
+  ros::Rate loop_rate(30);
 
   // Variable holding the rosbag containing point cloud data.
   rosbag::Bag bagfile;
